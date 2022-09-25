@@ -41,8 +41,8 @@ Run the index.html page from your browser
             style="display: inline-block; margin: auto; width: 500px; height:380px">
         </td>
         <td>
-            <img src="https://github.com/Vedashrutha/Payroll-Management/blob/master/images/utiliyy.png"
-            title="Home Page"
+            <img src="https://github.com/Vedashrutha/Payroll_Management/blob/main/images/utiliyy.png"
+            title="Utility Page"
             style="display: inline-block; margin: auto; width: 500px; height:380px">
         </td>
   </tr>
