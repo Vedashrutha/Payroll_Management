@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin | Login Page</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js\userauth.js"></script>
+    
+  </head>
+  <body>
+    <div class="image">
+      <img src="images/bg_index.jpg">
+    </div>
+    <div class="form" action="login.php" method="post">
+      <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="email" required class="userid" name="userid" id="userid">
+            <span></span>
+            <label>Email Address</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" name="password" id="password" required>
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <input type="submit" value="Login" onclick="check(this.form)">
+          <div class="signup_link"><a href=""></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

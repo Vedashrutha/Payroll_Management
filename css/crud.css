@@ -1,0 +1,11 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #ff0000;
+  }
+  .btn-primary{
+    background: #ff0000; 
+  }

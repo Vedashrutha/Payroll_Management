@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Remove | Attendance</title>
+    <link rel="stylesheet" href="css\mainstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Delete Attendance Details</div>
+    <div class="content">
+      <form name="myform" action="php\deleteattendance.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Employee ID</span>
+            <input type="text" id="Eid" name="Eid" placeholder="Enter Employee ID(4 chars only)"  autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Month</span>
+            <input type="text" id="Monthno" name="Monthno" placeholder="Enter between 1-12"  autocomplete="off" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

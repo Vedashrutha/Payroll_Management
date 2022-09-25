@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Insert Employee</title>
+    <link rel="stylesheet" href="css\mainstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">New Employee Details</div>
+    <div class="content">
+      <form name="myform" action="php\insertemployee.php" onsubmit="return validateForm()" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Employee ID</span>
+            <input type="text" id="Eid" name="Eid" placeholder="Enter Employee ID(4 chars only)"  autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Name</span>
+            <input type="text" id="Name" name="Name" placeholder="Enter Employee Name"  autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" id="Phone" name="Phone" placeholder="10-digit phone number"  autocomplete="off" >
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" id="Address" name="Address" placeholder="Enter Employee Address"  autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="Email" name="Email" placeholder="Enter Employee Email"  autocomplete="off" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Department No.</span>
+            <input type="text" id="Dno" name="Dno" placeholder="Enter Department Number"  autocomplete="off" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" name="submitbtn" value="Submit Details">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

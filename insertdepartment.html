@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Department</title>
+    <link rel="stylesheet" href="css\mainstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Department</div>
+    <div class="content">
+      <form name="myform" action="php\insertdepartment.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Department Number</span>
+            <input type="text" id="Dnumber" name="Dnumber" placeholder="Department Number"  autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Department Name</span>
+            <input type="text" id="Dept_name" name="Dept_name" placeholder="Dept Name (alphabets only)"  autocomplete="off" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Insert Department">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

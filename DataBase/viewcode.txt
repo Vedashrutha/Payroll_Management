@@ -1,0 +1,3 @@
+create view Total_Sal as (SELECT d.Dnumber,d.Dept_name,sum(s.SalaryAmount) as Total_Sum from salary s,department d,employee e where e.Eid=s.Eid and e.Dno=d.Dnumber
+group BY
+d.Dnumber);

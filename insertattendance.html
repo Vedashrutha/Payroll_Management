@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Employee | Attendance</title>
+    <link rel="stylesheet" href="./css/mainstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Attendance Details</div>
+    <div class="content">
+      <form name="myform" action="php\insertattendance.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Employee ID</span>
+            <input type="text" id="Eid" name="Eid" placeholder="Employee ID of Existing Employee"  autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Present Days</span>
+            <input type="text" id="Present" name="Present"  placeholder="No. of Days Present"  autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Month</span>
+            <input type="text" id="Monthno" name="Monthno" placeholder="Enter Between 1-12"  autocomplete="off" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Absent</span>
+            <input type="text" id="Absent" name="Absent" placeholder="Enter no.of days absent"  autocomplete="off" required>
+          </div>
+          
+        </div>
+        <div class="button">
+          <input type="submit" name="submit" value="Mark Attendance">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

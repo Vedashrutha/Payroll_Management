@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>ADMIN | Home</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initaial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="css/stylehome.css">
+  
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+   
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" type="text/css" href="css/stylehome.css">
+   <link rel="script" href="js/script.js">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <script language="javascript" type="text/javascript">
+       window.history.forward();
+   </script>
+<body>
+    
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo">ADMIN</div>
+        <ul class="links">
+          <li>
+             
+             <a><i class="fas fa-plus"></i> New Details</a>
+             <ul>
+               <li><a target="_blank" rel="noopener noreferrer" href="insertemployee.html">Employee</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="insertsalary.html">Salary</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="insertattendance.html">Attendance</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="insertloan.html">Loan</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="inserttax.html">Tax</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="insertdepartment.html">Department</a></li>
+             </ul>
+            </li>
+          <li>
+             <a><i class="fas fa-eraser"></i> Remove</a>
+             <ul>
+               <li><a target="_blank" rel="noopener noreferrer" href="deletetax.html">Tax</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="deleteloan.html">Loan</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="deleteattendance.html">Attendance</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="deletesalary.html">Salary</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="deleteemployee.html">Employee</a></li>
+             </ul>
+          </li>
+          <li>
+            <a target="_blank" href="php/database_display.php" class="desktop-link"><i class="far fa-hdd"></i> Database</a>
+          </li>
+          <li>
+            <a href="#" class="desktop-link"><i class="fas fa-tools"></i> Tools</a>
+            <input type="checkbox" id="show-services">
+            
+            <ul>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/employeedisplay.php" name="Employee" value="employee" class="search" onclick="myfunction()">Employees</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/Attendancedisplay.php" name="attendence" value="ATTENDANCE" class="search" onclick="myfunction()">Attendance</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/Departmentdisplay.php" name="leaves" value="Departments" class="search" onclick="myfunction()">Departments</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/old_employees.php" name="attandancedelete" value="OLD_Employees" class="search" onclick="myfunction()">Old Employees</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/tax.php" name="tax" value="tax" class="search" onclick="myfunction()">Tax</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" name="attandancedelete" value="DEC OVER!!!" class="deletebtn" onclick="myfunction()" class="desktop-link">New Year?</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-link"><i class="far fa-lightbulb"></i> Query</a>
+            <ul>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/query1.php">query 1</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/query2.php">query 2</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/query3.php">query 3</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/query4.php">query 4</a></li>
+               <li><a target="_blank" rel="noopener noreferrer" href="php/query5.php">query 5</a></li>
+            </ul>
+          </li>
+            <li><a href="index.html" action="logout.php" method="post"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+          </ul>
+        
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search" required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <div class="container">
+    <img src="images/logo.png" alt="Logo">
+  </div>
+
+  <div class="dummy-text">
+    <h2>CRUD Operations on</h2>
+    <h2>Employee Payroll Management System</h2>
+  </div>
+  <div class="modal fade" id="deletemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Delete Attendance </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <form action="php/attendancedelete.php" method="POST">
+
+                    <div class="modal-body">
+                        <h7> Are you sure it is the start of new year? You can download the attendance by clicking the download button</h7>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> No </button>
+                        <button type="submit" name="deletedata" class="btn btn-danger">Delete </button>
+                        <button type="submit" name="download" class="btn btn-primary"> Download Attendance </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Payroll Management</h3>
+      <p>A simple secure payroll management system to manage and maintain payment records.</p>
+      <div class="footer-bottom">
+        <p>copyright &copy;2022 bmsit.in. Developed by<span> 1BY19CS178 &#38; 1BY19CS183</span></p>
+      </div>
+      
+    </div>
+  </footer>
+</body>
+
+<script>
+  $(document).ready(function () {
+
+      $('.deletebtn').on('click', function () {
+
+          $('#deletemodal').modal('show');
+
+          $tr = $(this).closest('tr');
+
+          var data = $tr.children("td").map(function () {
+              return $(this).text();
+          }).get();
+      });
+  });
+</script>
+</html>
