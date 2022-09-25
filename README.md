@@ -13,7 +13,7 @@ Download the source file or clone using :
     git clone --recursive git@github.com:Vedashrutha/Payroll-Management.git
     `
 
-Import __[sql](https://github.com/Vedashrutha/Payroll-Management/blob/master/DataBase/veda.sql)__ file to Xampp ->MySQL
+Import __[sql](https://github.com/Vedashrutha/Payroll_Management/blob/main/DataBase/veda.sql)__ file to Xampp ->MySQL
 
 Run php Admin in Xampp
 Run the index.html page from your browser
@@ -23,12 +23,12 @@ Run the index.html page from your browser
 <table>
   <tr>
         <td>
-            <img src="https://github.com/Vedashrutha/Payroll-Management/blob/master/images/index.png"
+            <img src="https://github.com/Vedashrutha/Payroll_Management/blob/main/images/index.png"
             title="Login Page"
             style="display: inline-block; margin: auto; width: 500px; height:380px">
         </td>
         <td>
-            <img src="https://github.com/Vedashrutha/Payroll-Management/blob/master/images/home.png"
+            <img src="https://github.com/Vedashrutha/Payroll_Management/blob/main/images/home.png"
             title="Home Page"
             style="display: inline-block; margin: auto; width: 500px; height:380px">
         </td>
@@ -36,12 +36,12 @@ Run the index.html page from your browser
     <table>
   <tr>
         <td>
-            <img src="https://github.com/Vedashrutha/Payroll-Management/blob/master/images/db.png"
+            <img src="https://github.com/Vedashrutha/Payroll_Management/blob/main/images/db.png"
             title="Login Page"
             style="display: inline-block; margin: auto; width: 500px; height:380px">
         </td>
         <td>
-            <img src="https://github.com/Vedashrutha/Payroll-Management/blob/master/images/utiliyy.png"
+            <img src="https://github.com/Vedashrutha/Payroll-Management/blob/master/images/utility.png"
             title="Home Page"
             style="display: inline-block; margin: auto; width: 500px; height:380px">
         </td>
